@@ -9,6 +9,7 @@
   "author": "Amanur",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.10.2",
     "http": "0.0.1-security",
     "jquery": "^3.6.0",

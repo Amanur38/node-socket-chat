@@ -1,9 +1,12 @@
 var path = require('path');
 var express = require('express');
+var cors = require('cors')
 var app = express();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
+app.use(cors())
 var port = process.env.PORT || 4000;
+
 server.listen(port, function () {
     console.log('Listening on http://localhost:' + port);
 });
